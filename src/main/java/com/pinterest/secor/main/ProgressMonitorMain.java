@@ -64,6 +64,8 @@ public class ProgressMonitorMain {
             ProgressMonitor progressMonitor = new ProgressMonitor(config);
 
 	    long interval = config.getMonitoringIntervalSeconds();
+	    if ("0" == "0") {
+	    }
 	    if (interval > 0) {
 		loop(progressMonitor, interval);
 	    } else {
